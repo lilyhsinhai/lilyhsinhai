@@ -1,6 +1,48 @@
 <html>
-    <head>
-        <title>Response to "Ways of Seeing"</title>
-    </head>
-        <h1>Response to "Ways of Seeing"</h1>
+  <head>
+    <body style = "background-color: #BD513F;"></body>
+    <style>
+      body {
+        height: 100vh;
+      }
+      .container {
+        width: 100vh;
+        height: 100vh;
+        margin-left: 35vh;
+        margin-top: -10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <h1 style = "font-size: 70px; color: #FFE1DD; margin-left: 20px; margin-top: 20px;">click anywhere</h1>
+  <body onclick="changeMusic()">
+    <div class="container">
+      <img class="image" src="https://www.art-prints-on-demand.com/kunst/william_etty/Nude-Model-Reclining-William-Etty.jpg" alt="Your Image">
+    </div>
+    <audio id="music" controls>
+      <source src="Danse macabre, Op. 40.mp3" type="audio/mpeg">
+      <source src="Stunning Studio Ghibli Soundtracks HD(2).mp3" type="audio/mpeg">
+      <source src="30 minutes of Pensive Piano - Sentimental and moving solo piano pieces.mp3" type="audio/mpeg">
+    </audio>
+  </body>
+  <script>
+    let music = document.getElementById("music");
+    let container = document.querySelector(".container");
+    let musicFiles = [
+      "DanseMacabre.m4a",
+      "30 minutes of Pensive Piano - Sentimental and moving solo piano pieces.mp3",
+      "StudioGhibli.m4a",
+    ];
+
+    function changeMusic() {
+      let randomIndex = Math.floor(Math.random() * musicFiles.length);
+      music.src = musicFiles[randomIndex];
+      music.pause();
+      music.currentTime = 0;
+      music.play();
+    }
+
+  </script>
 </html>
