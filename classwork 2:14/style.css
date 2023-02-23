@@ -1,0 +1,7 @@
+.positioned {
+  position: relative;
+  background: yellow;
+  top: 30px;
+  left: 30px;
+
+}

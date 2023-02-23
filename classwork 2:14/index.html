@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Basic document flow</title>
+
+    <style>
+      body {
+        width: 500px;
+        height: 1400px;
+        margin: 0 auto;
+        margin-top: 50px;
+        
+      }
+
+      p {
+        background: aqua;
+        border: 3px solid blue;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      span {
+        background: red;
+        border: 1px solid black;
+      }
+      
+      p:nth-of-type(1) {
+        margin-top: 60px;
+      }
+
+      h1 {
+        position: fixed;
+        top: 0;
+        width: 500px;
+        margin-top: 0;
+        background: white;
+        padding: 10px;
+      }
+      .positioned {
+        position: sticky;
+        top: 30px;
+        left: 30px;
+      }
+      dt {
+        background-color: bisque;
+        color: darkslategray;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+        left: 0;
+        margin: 1em 0;
+      }
+    
+      #imgstyle {
+        width: 400px;
+        height: auto;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    
+    <h1>Sticky positioning</h1>
+
+<dl>
+  <dt>Context and Framing</dt>
+    <dd><img id = imgstyle src = "http://ivc.lib.rochester.edu/wp-content/uploads/2014/09/Paolo_Veronese_The_Wedding_at_Cana3-1024x689.jpg"></dd>
+    <dd>Ant</dd>
+    <dd>Altimeter</dd>
+    <dd>Airplane</dd>
+  <dt>Nudes and Misogyny</dt>
+    <dd><img id = imgstyle src = "https://render.fineartamerica.com/images/rendered/square-dynamic/small/images/artworkimages/mediumlarge/3/the-jade-necklace-exhibited-at-the-salon-de-de-la-societe-nationale-des-beaux-arts-of-1914-franc-rene-schutzenberger.jpg"
+        ></dd>
+    <dd><img id = imgstyle src = "https://i0.wp.com/www.bruceonarthistory.com/wp-content/uploads/2018/11/Art-Diego-Rodr%C3%ADguez-de-Silva-y-Vel%C3%A1zquez-Rokeby-Venus.jpg?resize=650%2C442&ssl=1"></dd>
+    <dd>Bee</dd>
+  <dt>Material Posessions</dt>
+    <dd>Calculator</dd>
+    <dd>Cane</dd>
+    <dd>Camera</dd>
+    <dd>Camel</dd>
+  <dt>Modern Capitalism and Advertising</dt>
+    <dd>Duck</dd>
+    <dd>Dime</dd>
+    <dd>Dipstick</dd>
+    <dd>Drone</dd>
+</dl>
+
+  </body>
+</html>
