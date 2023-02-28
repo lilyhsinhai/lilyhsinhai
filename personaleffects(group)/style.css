@@ -26,6 +26,19 @@ p {
     text-align: justify;
 }
 
+#toes {
+  text-align: right;
+}
+
+#glitch {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#imgwidth {
+  width: 40%;
+  justify-content: space-around;
+}
+
 button {
     margin: 100px;
     background-color: pink;
@@ -50,3 +63,30 @@ button:active{
       background-color: purple;
     }
   }
+
+/* 
+text shake animation inspired from 
+https://unused-css.com/blog/css-shake-animation/
+ */
+
+button:hover{
+  animation: shake 0.8s;
+}
+
+@keyframes shake{
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(5deg);
+  }
+  50%{
+    transform: rotate(0deg);
+  }
+  75%{
+    transform: rotate(-5deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
