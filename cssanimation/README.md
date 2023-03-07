@@ -1,2 +1,2 @@
-# Response to "As We May Think"
-https://lilyhsinhai.github.io/lilyhsinhai/aswemaythink/
+# css animation
+https://lilyhsinhai.github.io/lilyhsinhai/cssanimation/
