@@ -1,5 +1,65 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>animation</title>
-    </head>
+<head>
+	<title>Flowers Animation</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			height: 100vh;
+			overflow: hidden;
+            background-color: #8BC34A;
+		}
+
+		.flower {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            border: 20px solid transparent;
+            animation: growFlower 3s ease-in-out forwards infinite;
+            animation-delay: calc(var(--index) * 0.5s);
+        }
+
+
+		.flower-pink {
+			border-top-color: #ff69b4;
+		}
+
+		.flower-yellow {
+			border-top-color: #ffd700;
+		}
+
+		.flower-blue {
+			border-top-color: #00bfff;
+		}
+
+        .flower-purple {
+            border-top-color: #AB00F5;
+        }
+
+		@keyframes growFlower {
+			to {
+				width: 1500px;
+				height: 700px;
+				border-width: 30px;
+				border-radius: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="flower flower-pink" style="--index: 1;"></div>
+		<div class="flower flower-yellow" style="--index: 2;"></div>
+        <div class="flower flower-purple" style="--index: 3;"></div>
+		<div class="flower flower-blue" style="--index: 4;"></div>
+        <div class="flower flower-purple" style="--index: 5;"></div>
+		<div class="flower flower-yellow" style="--index: 6;"></div>
+		<div class="flower flower-pink" style="--index: 7;"></div>
+	</div>
+</body>
 </html>
