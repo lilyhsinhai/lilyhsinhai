@@ -1,2 +1,2 @@
-# The Medium is the Massage 2.0
-## https://lilyhsinhai.github.io/lilyhsinhai/themedium2.0/
+# Final Project Proposal
+## https://lilyhsinhai.github.io/lilyhsinhai/finalproposal/slide1.html

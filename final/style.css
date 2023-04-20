@@ -1,0 +1,71 @@
+
+.doll-image {
+  height: 100vh;
+  position: absolute;
+}
+
+#doll1 {
+  height: 100vh;
+  top: 0vh;
+  left: 33vw;
+}
+
+.clothes-image {
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  transition: transform 0.5s ease-in-out; /* Add transition for smooth animation */
+}
+
+.clothes:hover {
+  transform: scale(1.1); /* Add scaling effect on hover */
+}
+
+#clothes1 {
+  height: 80vh;
+  top: 20vh;
+  left: 10vw;
+}
+
+#clothes2 {
+  height: 40vh;
+  top: 50vh;
+  left: 57vw;
+}
+
+#clothes3 {
+  height: 80vh;
+  top: 0vh;
+  left: 75vw;
+}
+
+#clothes4 {
+  height: 10vh;
+  top: 5vh;
+  left: 30vw;
+}
+
+#clothes5 {
+  height: 8vh;
+  top: 15vh;
+  left: 30vw;
+}
+
+#clothes6 {
+  height: 20vh;
+  top: 10vh;
+  left: 5vw;
+  rotate: 335deg;
+}
+
+#clothes7 {
+  height: 20vh;
+  top: 20vh;
+  left: 60vw;
+}
+
+
+
+
+
+
