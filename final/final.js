@@ -1,33 +1,44 @@
-const greendress1A = document.querySelector('#greendress1A');
-const greendress1B = document.querySelector('#greendress1B');
-const target = document.querySelector('.target')
 
-greendress1A.addEventListener('dragstart', (e) => {
-	e.dataTransfer.setDragImage(greendress1B, 150,300);
-	e.target.style.opacity = 0.3;
+const clothes1 = document.querySelectorAll('.clothes-image');
+const target = document.querySelector('#target')
+
+
+clothes1.forEach((clothesImage) => {
+	clothesImage.addEventListener('dragstart', (e) => {
+		e.dataTransfer.setDragImage(clothesImage, clothesImage.width/2, clothesImage.height/2);
+		e.dataTransfer.setData("src-id", clothesImage.id);
+		e.target.style.opacity = 0.3;
+	});
+
+	clothesImage.addEventListener('dragend', (e) => {
+		e.target.style.opacity = 1;
+	})
+
 })
 
-greendress1A.addEventListener('dragend', (e) => {
-	e.target.style.opacity = 1;
-})
 
 target.addEventListener('dragover', (e) => {
 	e.preventDefault();
 })
 
 target.addEventListener('dragenter', (e) => {
-	e.target.style.background = '#eee';
+	e.target.style.opacity = 0.3;
 })
 
 target.addEventListener('dragleave', (e) => {
-	e.target.style.background = '';
+	e.target.style.opacity = 1;
 })
 
 target.addEventListener('drop', (e) => {
 	e.preventDefault();
-	const greendress1AID = e.dataTransfer.getData('text/plain');
-	e.target.appendChild(document.getElementById(greendress1AID));
-	e.target.style.background = '';
+	const srcId = e.dataTransfer.getData("src-id");
+	document.querySelector('#' + srcId).classList.add('worn');
+	e.target.style.opacity = 1;
 })
 
-
+target.addEventListener('dblclick', (e) => {
+	e.preventDefault();
+	clothes1.forEach((clothesImage) => {
+		clothesImage.classList.remove('worn');	
+	})
+})
