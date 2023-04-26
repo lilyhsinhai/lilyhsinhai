@@ -1,0 +1,126 @@
+
+.doll-image {
+  position: relative;
+  height: 100%;
+}
+
+.doll-target {
+  position: absolute;
+  top: 10vh;
+  left: 40vw;
+  height: 80vh;
+  width: 30vh;
+}
+
+#target {
+  z-index: 2;
+}
+
+#doll1 {
+  z-index: 0;
+}
+
+
+
+.clothes-image {
+  position: absolute;
+  z-index: 1;
+}
+
+
+#greendress1 {
+  height: 94vh;
+  top: 20vh;
+  left: 10vw;
+}
+
+#greendress1.worn {
+  height: 94vh;
+  top: 10.5vh;
+  left: 35vw;
+}
+
+
+#coat1 {
+  height: 41vh;
+  top: 50vh;
+  left: 57vw;
+}
+
+#coat1.worn {
+  height: 41vh;
+  top: 21vh;
+  left: 39vw;
+}
+
+
+#whitedress1 {
+  height: 87vh;
+  top: 0vh;
+  left: 75vw;
+}
+
+#whitedress1.worn {
+  height: 88vh;
+  top: 13vh;
+  left: 35.75vw;
+}
+
+.glove1 {
+  rotate: 115deg;
+}
+
+#rightglove1 {
+  height: 9vh;
+  top: 5vh;
+  left: 30vw;
+}
+
+#rightglove1.worn {
+  height: 9vh;
+  top: 28.5vh;
+  left: 36vw;
+}
+
+
+#leftglove1 {
+  height: 7vh;
+  top: 15vh;
+  left: 30vw;
+}
+
+#leftglove1.worn {
+  height: 7vh;
+  top: 45vh;
+  left: 49vw;
+}
+
+
+#hat1 {
+  height: 21vh;
+  top: 10vh;
+  left: 5vw;
+  rotate: 345deg;
+}
+
+#hat1.worn {
+  height: 21vh;
+  top: 1vh;
+  left: 40vw;
+  rotate: 345deg;
+}
+
+
+#flowers1 {
+  height: 20vh;
+  top: 20vh;
+  left: 60vw;
+}
+
+#flowers1.worn {
+  height: 20vh;
+  top: 24vh;
+  left: 31vw;
+}
+
+
