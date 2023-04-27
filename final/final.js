@@ -15,7 +15,7 @@ clothes1.forEach((clothesImage) => {
 
   moveAt(event.pageX, event.pageY);
 
-  // moves the ball at (pageX, pageY) coordinates
+  // moves the clothes at (pageX, pageY) coordinates
   // taking initial shifts into account
   function moveAt(pageX, pageY) {
     clothesImage.style.left = pageX - shiftX + 'px';
@@ -26,10 +26,10 @@ clothes1.forEach((clothesImage) => {
     moveAt(event.pageX, event.pageY);
   }
 
-  // move the ball on mousemove
+  // move the clothes on mousemove
   document.addEventListener('mousemove', onMouseMove);
 
-  // drop the ball, remove unneeded handlers
+  // drop the clothes, remove unneeded handlers
   clothesImage.onmouseup = function() {
     document.removeEventListener('mousemove', onMouseMove);
     clothesImage.onmouseup = null;
