@@ -5,6 +5,7 @@
   top: 3vh;
   left: 2vh;
   opacity: 0.5;
+  z-index: 2;
 }
 .reset {
   position: absolute;
@@ -12,6 +13,7 @@
   top: 90vh;
   left: 45vw;
   opacity: 0.5;
+  z-index: 2;
 }
 
 .doll-image {
