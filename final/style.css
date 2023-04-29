@@ -1,19 +1,37 @@
 
+.home {
+  position: absolute;
+  height: 7vh;
+  top: 3vh;
+  left: 2vh;
+  opacity: 0.5;
+}
+.reset {
+  position: absolute;
+  height: 7vh;
+  top: 90vh;
+  left: 45vw;
+  opacity: 0.5;
+}
+
 .doll-image {
   position: relative;
   height: 100%;
   height: 80vh;
   z-index: 0;
 }
-
 #doll1 {
   top: 5vh;
   left: 35vw;
 }
-
 #doll2 {
   top: 9vh;
   left: 42vw;
+}
+
+#doll1-home {
+  top: 5vh;
+  left: 20vw;
 }
 
 
@@ -21,48 +39,40 @@
   position: absolute;
   z-index: 1;
 }
-
 #greendress1 {
   height: 94vh;
   top: 15vh;
   left: 10vw;
 }
-
 #whitedress1 {
   height: 70vh;
   top: 5vh;
   left: 80vw;
 }
-
 #coat1 {
   height: 41vh;
   top: 45vh;
   left: 57vw;
 }
-
 .glove1 {
   rotate: 115deg;
 }
-
 #rightglove1 {
   height: 9vh;
   top: 0vh;
   left: 30vw;
 }
-
 #leftglove1 {
   height: 7vh;
   top: 10vh;
   left: 30vw;
 }
-
 #hat1 {
   height: 21vh;
   top: 5vh;
   left: 5vw;
   rotate: 345deg;
 }
-
 #flowers1 {
   height: 20vh;
   top: 15vh;
@@ -70,50 +80,42 @@
 }
 
 
-
 #tandress2 {
   height: 47vh;
   top: 35vh;
   left: 75vw;
 }
-
 #purpledress2 {
   height: 53vh;
   top: 40vh;
   left: 22vw;
 }
-
 #blackdress2 {
   height: 55vh;
   top: 5vh;
   left: 5vw;
 }
-
 #shoes2 {
   height: 9vh;
   top: 80vh;
   left: 60vw;
   rotate: 17deg;
 }
-
 #fox2 {
   height: 20vh;
   top: 5vh;
   left: 25vw;
 }
-
 #redbag2 {
   height: 11vh;
   top: 10vh;
   left: 62vw;
 }
-
 #blackbag2 {
   height: 11vh;
   top: 45vh;
   left: 58vw;
 }
-
 #hat2 {
   height: 10vh;
   top: 15vh;
