@@ -1,18 +1,24 @@
 
+.border {
+  position: absolute;
+  height: 98vh;
+  width: 98vw;
+}
+
 .home {
   position: absolute;
-  height: 7vh;
-  top: 3vh;
-  left: 2vh;
-  opacity: 0.5;
+  height: 9vh;
+  top: 2vh;
+  left: 2.5vh;
   z-index: 2;
 }
 .reset {
   position: absolute;
-  height: 7vh;
+  height: 6vh;
   top: 90vh;
   left: 45vw;
-  opacity: 0.5;
+  rotate: 10deg;
+  opacity: 0.7;
   z-index: 2;
 }
 
@@ -27,7 +33,7 @@
   left: 35vw;
 }
 #doll2 {
-  top: 9vh;
+  top: 5vh;
   left: 42vw;
 }
 
@@ -44,41 +50,41 @@
 #greendress1 {
   height: 94vh;
   top: 15vh;
-  left: 10vw;
+  left: 12vw;
 }
 #whitedress1 {
   height: 70vh;
-  top: 5vh;
-  left: 80vw;
+  top: 17vh;
+  left: 77vw;
 }
 #coat1 {
   height: 41vh;
-  top: 45vh;
-  left: 57vw;
+  top: 35vh;
+  left: 55vw;
 }
 .glove1 {
   rotate: 115deg;
 }
 #rightglove1 {
   height: 9vh;
-  top: 0vh;
+  top: 5vh;
   left: 30vw;
 }
 #leftglove1 {
   height: 7vh;
-  top: 10vh;
+  top: 15vh;
   left: 30vw;
 }
 #hat1 {
   height: 21vh;
-  top: 5vh;
-  left: 5vw;
+  top: 7vh;
+  left: 10vw;
   rotate: 345deg;
 }
 #flowers1 {
   height: 20vh;
-  top: 15vh;
-  left: 60vw;
+  top: 10vh;
+  left: 58vw;
 }
 
 
@@ -90,12 +96,12 @@
 #purpledress2 {
   height: 53vh;
   top: 40vh;
-  left: 22vw;
+  left: 25vw;
 }
 #blackdress2 {
   height: 55vh;
-  top: 5vh;
-  left: 5vw;
+  top: 10vh;
+  left: 8vw;
 }
 #shoes2 {
   height: 9vh;
@@ -105,18 +111,18 @@
 }
 #fox2 {
   height: 20vh;
-  top: 5vh;
-  left: 25vw;
+  top: 10vh;
+  left: 60vw;
 }
 #redbag2 {
   height: 11vh;
-  top: 10vh;
-  left: 62vw;
+  top: 45vh;
+  left: 60vw;
 }
 #blackbag2 {
   height: 11vh;
-  top: 45vh;
-  left: 58vw;
+  top: 12vh;
+  left: 32vw;
 }
 #hat2 {
   height: 10vh;
