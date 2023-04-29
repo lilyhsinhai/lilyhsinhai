@@ -1,18 +1,18 @@
 
-.border {
+#border {
   position: absolute;
   height: 98vh;
   width: 98vw;
 }
 
-.home {
+#home {
   position: absolute;
   height: 9vh;
   top: 2vh;
   left: 2.5vh;
   z-index: 2;
 }
-.reset {
+#reset {
   position: absolute;
   height: 6vh;
   top: 90vh;
@@ -46,6 +46,9 @@
 .clothes-image {
   position: absolute;
   z-index: 1;
+}
+.clothes-image.resetting {
+  transition: top 2s, left 2s;
 }
 #greendress1 {
   height: 94vh;
