@@ -27,15 +27,25 @@ clothes1.forEach((clothesImage) => {
     function onMouseMove(event) {
       moveAt(event.pageX, event.pageY);
     }
-
+    
     // move the clothes on mousemove
     document.addEventListener('mousemove', onMouseMove);
+    function cleanup() {
+      document.removeEventListener('mousemove', onMouseMove);
+      document.body.removeEventListener('pointerleave', onPointerLeave);
+      clothesImage.onmouseup = null;
+    }
+    function onPointerLeave(event) {
+      cleanup();
+      console.log(event);
+    }
 
     // drop the clothes, remove unneeded handlers
     clothesImage.onmouseup = function() {
-      document.removeEventListener('mousemove', onMouseMove);
-      clothesImage.onmouseup = null;
+      cleanup();
     };
+
+    document.body.addEventListener("pointerleave", onPointerLeave)
 
   };
 
@@ -51,4 +61,3 @@ reset.onclick = function(event) {
     clothesImage.style = "";
   });
 }
-

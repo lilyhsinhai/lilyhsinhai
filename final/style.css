@@ -3,6 +3,7 @@
   position: absolute;
   height: 98vh;
   width: 98vw;
+  background-color: pink;
 }
 
 #home {
@@ -36,7 +37,6 @@
   top: 5vh;
   left: 42vw;
 }
-
 #doll1-home {
   top: 5vh;
   left: 20vw;
