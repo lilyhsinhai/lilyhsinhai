@@ -3,7 +3,16 @@
   position: absolute;
   height: 98vh;
   width: 98vw;
-  background-color: pink;
+}
+
+#title {
+  position: relative;
+  font-family: Bookman, URW Bookman L, serif;
+  font-variant: small-caps;
+  font-size: 80px;
+  color: #5A514A;
+  text-align: center;
+  margin: 0 auto;
 }
 
 #home {
@@ -17,14 +26,14 @@
   position: absolute;
   height: 6vh;
   top: 90vh;
-  left: 45vw;
+  left: 47vw;
   rotate: 10deg;
   opacity: 0.7;
   z-index: 2;
 }
 
 .doll-image {
-  position: relative;
+  position: absolute;
   height: 100%;
   height: 80vh;
   z-index: 0;
@@ -35,11 +44,34 @@
 }
 #doll2 {
   top: 5vh;
-  left: 42vw;
+  left: 44vw;
+}
+#doll3 {
+  top: 5vh;
+  left: 40vw;
+}
+#doll4 {
+  top: 5vh;
+  left: 39vw;
+}
+.doll-home {
+  position: absolute;
+  height: 100%;
+  height: 80vh;
+  z-index: 0;
+  top: 14vh;
 }
 #doll1-home {
-  top: 5vh;
-  left: 20vw;
+  left: 9vw;
+}
+#doll2-home {
+  left: 33vw;
+}
+#doll3-home {
+  left: 48vw;
+}
+#doll4-home {
+  left: 70vw;
 }
 
 
@@ -48,10 +80,10 @@
   z-index: 1;
 }
 .clothes-image.resetting {
-  transition: top 2s, left 2s;
+  transition: top 1s, left 1s;
 }
 #greendress1 {
-  height: 94vh;
+  height: 90vh;
   top: 15vh;
   left: 12vw;
 }
@@ -61,8 +93,8 @@
   left: 77vw;
 }
 #coat1 {
-  height: 41vh;
-  top: 35vh;
+  height: 39vh;
+  top: 37vh;
   left: 55vw;
 }
 .glove1 {
@@ -89,6 +121,16 @@
   top: 10vh;
   left: 58vw;
 }
+#blueflowers1 {
+  height: 13vh;
+  top: 38vh;
+  left: 7vw;
+}
+#passport1 {
+  height: 10vh;
+  top: 65vh;
+  left: 10vw;
+}
 
 
 #tandress2 {
@@ -99,11 +141,11 @@
 #purpledress2 {
   height: 53vh;
   top: 40vh;
-  left: 25vw;
+  left: 22vw;
 }
 #blackdress2 {
   height: 55vh;
-  top: 10vh;
+  top: 15vh;
   left: 8vw;
 }
 #shoes2 {
@@ -124,19 +166,101 @@
 }
 #blackbag2 {
   height: 11vh;
-  top: 12vh;
-  left: 32vw;
+  top: 15vh;
+  left: 30vw;
 }
 #hat2 {
-  height: 10vh;
+  height: 12vh;
   top: 15vh;
   left: 80vw;
 }
 
 
+#bluedress3 {
+  height: 68vh;
+  top: 15vh;
+  left: 80vw;
+}
+#set3 {
+  height: 45vh;
+  top: 10vh;
+  left: 5vw;
+}
+#trench3 {
+  height: 55vh;
+  top: 35vh;
+  left: 22vw;
+}
+#coat3 {
+  height: 30vh;
+  top: 10vh;
+  left: 60vw;
+}
+#brownbag3 {
+  height: 10vh;
+  top: 62vh;
+  left: 5vw;
+}
+#suitcase3 {
+  height: 18vh;
+  top: 9vh;
+  left: 28vw;
+}
+#cat3 {
+  height: 20vh;
+  top: 70vh;
+  left: 63vw;
+  transform: scaleX(-1);
+}
+#martini3 {
+  height: 10vh;
+  top: 75vh;
+  left: 15vw;
+}
+#book3 {
+  height: 10vh;
+  top: 52vh;
+  left: 65vw;
+}
 
 
-
-
-
-
+#reddress4 {
+  height: 67vh;
+  top: 25vh;
+  left: 7vw;
+}
+#set4 {
+  height: 67vh;
+  top: 10vh;
+  left: 60vw;
+}
+#jockey4 {
+  height: 67vh;
+  top: 25vh;
+  left: 70vw;
+}
+#fox4 {
+  height: 20vh;
+  top: 7vh;
+  left: 20vw;
+}
+#hat4 {
+  height: 7vh;
+  top: 10vh;
+  left: 77vw;
+}
+#fan4 {
+  height: 17vh;
+  top: 30vh;
+  left: 28vw;
+}
+#basket4 {
+  height: 10vh;
+  top: 82vh;
+  left: 28vw;
+}
+#dog4 {
+  height: 15vh;
+  top: 58vh;
+  left: 27vw;
+}

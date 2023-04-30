@@ -5,8 +5,9 @@ const reset = document.querySelector('#reset');
 
 clothes1.forEach((clothesImage) => {
 	clothesImage.onmousedown = function(event) {
-    
     clothesImage.classList.remove("resetting");
+
+    clothesImage.style.zIndex = 10;
 
     let shiftX = event.clientX - clothesImage.getBoundingClientRect().left;
     let shiftY = event.clientY - clothesImage.getBoundingClientRect().top;
@@ -34,10 +35,10 @@ clothes1.forEach((clothesImage) => {
       document.removeEventListener('mousemove', onMouseMove);
       document.body.removeEventListener('pointerleave', onPointerLeave);
       clothesImage.onmouseup = null;
+      clothesImage.style.zIndex = "";
     }
     function onPointerLeave(event) {
       cleanup();
-      console.log(event);
     }
 
     // drop the clothes, remove unneeded handlers
