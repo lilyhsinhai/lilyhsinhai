@@ -34,7 +34,6 @@
 
 .doll-image {
   position: absolute;
-  height: 100%;
   height: 80vh;
   z-index: 0;
 }
@@ -56,10 +55,10 @@
 }
 .doll-home {
   position: absolute;
-  height: 100%;
   height: 80vh;
   z-index: 0;
   top: 14vh;
+  transition: all 0.5s ease-in-out; /* doll drops back down smoothly */
 }
 #doll1-home {
   left: 9vw;
@@ -73,14 +72,24 @@
 #doll4-home {
   left: 70vw;
 }
+.doll-home:hover {
+  filter: drop-shadow(5px 5px 20px #5A514A); /* puts shadow behind image instead of image box */
+  transition: all 0.5s ease-in-out; /* smooth pick up */
+  height: 81vh;
+}
 
 
 .clothes-image {
   position: absolute;
   z-index: 1;
+  transition: all 0.5s, top 0s, left 0s ease-in-out; /* clothes drop back down smoothly */
+}
+.clothes-image:hover {
+  filter: drop-shadow(5px 5px 20px #5A514A); /* puts shadow behind image instead of image box */
+  transition: all 0.5s, top 0s, left 0s ease-in-out; /* smooth pick up */
 }
 .clothes-image.resetting {
-  transition: top 1s, left 1s;
+  transition: top 1s, left 1s; /* all clothes move back to their spot in 1s */
 }
 #greendress1 {
   height: 90vh;
@@ -97,24 +106,20 @@
   top: 37vh;
   left: 55vw;
 }
-.glove1 {
-  rotate: 115deg;
-}
 #rightglove1 {
   height: 9vh;
   top: 5vh;
-  left: 30vw;
+  left: 28vw;
 }
 #leftglove1 {
-  height: 7vh;
-  top: 15vh;
+  height: 12vh;
+  top: 12vh;
   left: 30vw;
 }
 #hat1 {
-  height: 21vh;
-  top: 7vh;
-  left: 10vw;
-  rotate: 345deg;
+  height: 26vh;
+  top: 5vh;
+  left: 8vw;
 }
 #flowers1 {
   height: 20vh;
@@ -144,15 +149,14 @@
   left: 22vw;
 }
 #blackdress2 {
-  height: 55vh;
+  height: 50vh;
   top: 15vh;
   left: 8vw;
 }
 #shoes2 {
-  height: 9vh;
+  height: 12vh;
   top: 80vh;
   left: 60vw;
-  rotate: 17deg;
 }
 #fox2 {
   height: 20vh;
@@ -210,7 +214,7 @@
   height: 20vh;
   top: 70vh;
   left: 63vw;
-  transform: scaleX(-1);
+  transform: scaleX(-1); /* flip the image */
 }
 #martini3 {
   height: 10vh;

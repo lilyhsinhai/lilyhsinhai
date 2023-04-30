@@ -56,6 +56,7 @@ clothes1.forEach((clothesImage) => {
 
 });
 
+// add .resetting transition to .clothes-image
 reset.onclick = function(event) {
   clothes1.forEach((clothesImage) => {
     clothesImage.classList.add("resetting");
