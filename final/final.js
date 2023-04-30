@@ -6,6 +6,7 @@ const reset = document.querySelector('#reset');
 clothes1.forEach((clothesImage) => {
 	clothesImage.onmousedown = function(event) {
     clothesImage.classList.remove("resetting");
+    clothesImage.classList.add("pickedup");
 
     clothesImage.style.zIndex = 10;
 
@@ -36,6 +37,7 @@ clothes1.forEach((clothesImage) => {
       document.body.removeEventListener('pointerleave', onPointerLeave);
       clothesImage.onmouseup = null;
       clothesImage.style.zIndex = "";
+      clothesImage.classList.remove("pickedup");
     }
     function onPointerLeave(event) {
       cleanup();
@@ -63,3 +65,4 @@ reset.onclick = function(event) {
     clothesImage.style = "";
   });
 }
+

@@ -85,8 +85,13 @@
   transition: all 0.5s, top 0s, left 0s ease-in-out; /* clothes drop back down smoothly */
 }
 .clothes-image:hover {
-  filter: drop-shadow(5px 5px 20px #5A514A); /* puts shadow behind image instead of image box */
+  /* filter: drop-shadow(5px 5px 20px #5A514A); puts shadow behind image instead of image box */
+  /* transition: all 0.5s, top 0s, left 0s ease-in-out; smooth pick up */
+}
+.clothes-image.pickedup {
+  filter: drop-shadow(5px 5px 30px #5A514A); /* puts shadow behind image instead of image box */
   transition: all 0.5s, top 0s, left 0s ease-in-out; /* smooth pick up */
+  transform: scale(1.01);
 }
 .clothes-image.resetting {
   transition: top 1s, left 1s; /* all clothes move back to their spot in 1s */
@@ -176,7 +181,7 @@
 #hat2 {
   height: 12vh;
   top: 15vh;
-  left: 80vw;
+  left: 77vw;
 }
 
 
