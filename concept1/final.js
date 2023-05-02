@@ -1,6 +1,5 @@
 
 const clothes1 = document.querySelectorAll('.clothes-image');
-const target = document.querySelector('#target')
 
 
 clothes1.forEach((clothesImage) => {
