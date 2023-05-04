@@ -60,6 +60,11 @@
   top: 14vh;
   transition: all 0.5s ease-in-out; /* doll drops back down smoothly */
 }
+.doll-home:hover {
+  filter: drop-shadow(5px 5px 20px #5A514A); /* puts shadow behind image instead of image box */
+  transition: all 0.5s ease-in-out; /* smooth pick up */
+  height: 81vh;
+}
 #doll1-home {
   left: 9vw;
 }
@@ -71,11 +76,6 @@
 }
 #doll4-home {
   left: 70vw;
-}
-.doll-home:hover {
-  filter: drop-shadow(5px 5px 20px #5A514A); /* puts shadow behind image instead of image box */
-  transition: all 0.5s ease-in-out; /* smooth pick up */
-  height: 81vh;
 }
 
 
