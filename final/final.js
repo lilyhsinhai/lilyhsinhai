@@ -3,6 +3,8 @@ const clothes1 = document.querySelectorAll('.clothes-image');
 const reset = document.querySelector('#reset');
 
 
+// https://javascript.info/mouse-drag-and-drop
+
 clothes1.forEach((clothesImage) => {
 	clothesImage.onmousedown = function(event) {
     clothesImage.classList.remove("resetting");
@@ -10,6 +12,7 @@ clothes1.forEach((clothesImage) => {
 
     clothesImage.style.zIndex = 10;
 
+    // stops the image from "jumping" to your mouse when picked up
     let shiftX = event.clientX - clothesImage.getBoundingClientRect().left;
     let shiftY = event.clientY - clothesImage.getBoundingClientRect().top;
 
